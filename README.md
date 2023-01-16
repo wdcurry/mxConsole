@@ -57,7 +57,7 @@ A simple test is to fire up mxConsole and choose to run termui, currently option
 
 ### Coming Features
 
-- A few more goodies planned, like the NodesSlug showing your redundancy level!
+- A few more goodies planned, like the NodesSlug including a node's redundancy level!
 - Feel free to send along your ideas!
 
 ## Author
