@@ -4,8 +4,8 @@
 #                       options (to 1char only).
 # Todo:         Create options to manage entire upgrade for mainnet in one selection
 # Author        Drew Curry, ApeStaking
-# Version       0.9.0
-# Date		jan15-2023
+# Version       0.9.1
+# Date		jan16-2023
 # Location      MultiversXs main folder
 
 #!/bin/bash

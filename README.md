@@ -51,13 +51,13 @@ A simple test is to fire up mxConsole and choose to run termui, currently option
 - The entire upgrade sequence is now automated for you, with optional stepXsstep mode to provide you with more involvement in the upgrade.
 - A full Testnet upgrade is possible, but will not proceed for a mainnet install.
 - The ability to easily toggle a node's LogLevel between DEBUG and INFO modes.
-- Introducing the NodesSlug! A concise display of your nodes Eligible state & LogLevel, similar to "/0:wI/1:wD/" which shows your node-0 is in Waiting state with a loglevel of INFO, and your node-1 is an observer in DEBUG mode.
+- Introducing the NodesSlug! A concise display of your nodes Eligible state & LogLevel, similar to "/0:wIr0/1:wDr2/" which shows your node-0 is in Waiting state with a loglevel of INFO, and your node-1 is an observer in DEBUG mode. And now the trailing r# will reveal your node's redundancy level!
 - A help screen is now integrated, accessible via tapping "h" or "?".
 - A clean environment allowing for expansion as MultiversX expands.
 
 ### Coming Features
 
-- A few more goodies planned, like the NodesSlug including a node's redundancy level!
+- A few more goodies planned, like the NodesSlug including a node's redundancy level (done✔️)!
 - Feel free to send along your ideas!
 
 ## Author
