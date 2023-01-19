@@ -4,8 +4,8 @@
 #                       options (to 1char only).
 # Todo:         Create options to manage entire upgrade for mainnet in one selection
 # Author        Drew Curry, ApeStaking
-# Version       0.9.1
-# Date		jan16-2023
+# Version       0.9.2
+# Date		jan18-2023
 # Location      MultiversXs main folder
 
 #!/bin/bash
@@ -28,7 +28,15 @@
 
 # There should only be one /mx-chain-scripts folder, use that as our base.
 # This will work from any starting folder.
+# NOTE: if mxConsole.sh is run with sudo, this next *crucial* segment fails, as currentFolder is blank
 currentFolder=$(find ~ -name "mx-chain-scripts" -type d)
+
+# Protect against failure, as seen if run with sudo. With no currentFolder, we *must* stop
+if [ ${#currentFolder} -eq 0 ]; then
+	echo "mxConsole must quit, as no 'currentFolder' was found, often seen if run with sudo privilege."
+	read -p "Tap any key to continue..." p
+	exit
+fi
 
 source $currentFolder"/config/mx-Utility.cfg"
 source $currentFolder"/config/mx-Init.cfg"
